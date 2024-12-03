@@ -1,0 +1,19 @@
+{
+  "name": "full_backend_zero",
+  "version": "1.0.0",
+  "description": "FullStack Backend NodeJS ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "react"
+  ],
+  "author": "VietAnh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
