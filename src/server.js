@@ -4,10 +4,15 @@ const express = require('express');
 const configViewEngine = require('./config/viewEngine');
 const webRoutes = require('./routes/web');
 const connection = require('./config/db');
+const exp = require('constants');
 
 const app = express(); // app express
 const port = process.env.PORT || 8888; //port => hard code, uat = user accept testing
 const hostname = process.env.HOST_NAME;
+
+//config request.body
+app.use(express.json())
+app.use(express.urlencoded({extended : true}))
 
 // config template
 configViewEngine(app);
